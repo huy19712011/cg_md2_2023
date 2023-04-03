@@ -6,11 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="p10_collection_framework" />
         <module name="p9_testing" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="p9_testing" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
