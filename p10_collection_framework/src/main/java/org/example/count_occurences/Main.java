@@ -9,7 +9,7 @@ public class Main {
         String word1 = "male cat";
 
         String str = "cong hoa xa hoi chu nghia viet nam";
-        String word = "ho";
+        String word = "ho ";
 
 
 
