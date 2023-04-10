@@ -27,5 +27,12 @@ public class ExceptionsDemo {
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
+
+        var account = new Account();
+        try {
+            account.deposit(-10);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
