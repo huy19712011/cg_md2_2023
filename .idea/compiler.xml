@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="p24_stream" />
         <module name="p10_collection_framework" />
+        <module name="p14_exception" />
+        <module name="p24_stream" />
         <module name="p9_testing" />
       </profile>
     </annotationProcessing>
