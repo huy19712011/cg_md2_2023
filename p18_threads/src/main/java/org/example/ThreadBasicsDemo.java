@@ -33,6 +33,12 @@ public class ThreadBasicsDemo {
 
     public static void main(String[] args) {
 
+        // New
+        // Runnable
+        // Running
+        // Blocked/waiting
+        // Terminated/dead
+
         // task 1
         System.out.println("task1 kicked off");
         Task1 task1 = new Task1();
