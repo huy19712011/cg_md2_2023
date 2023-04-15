@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="p10_collection_framework" />
         <module name="p14_exception" />
+        <module name="p19_RegularExpression" />
         <module name="p24_stream" />
         <module name="p18_threads" />
         <module name="p9_testing" />

@@ -9,10 +9,11 @@
         <option value="$PROJECT_DIR$/p24_stream/pom.xml" />
         <option value="$PROJECT_DIR$/p14_exception/pom.xml" />
         <option value="$PROJECT_DIR$/p18_threads/pom.xml" />
+        <option value="$PROJECT_DIR$/p19_RegularExpression/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
