@@ -55,6 +55,7 @@ public class QuantifierDemo {
         }
 */
 
+/*
         // {ranger}
         Pattern pattern = Pattern.compile("a{2,3}");
         Matcher matcher = pattern.matcher("Javaaa is fun!");
@@ -64,7 +65,17 @@ public class QuantifierDemo {
         } else {
             System.out.println("Match not found");
         }
+*/
 
+        // {n,} => at least n
+        Pattern pattern = Pattern.compile("a{2,}");
+        Matcher matcher = pattern.matcher("Javaaa is fun!");
+        boolean matchFound = matcher.find();
+        if(matchFound) {
+            System.out.println("Match found");
+        } else {
+            System.out.println("Match not found");
+        }
 
     }
 }
