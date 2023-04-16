@@ -20,6 +20,7 @@ public class MetacharactersDemo {
         }
 */
 
+/*
         // . metacharacter
         String text = "Cat Bat Rat XYZat";
         String pattern = ".at";
@@ -29,5 +30,16 @@ public class MetacharactersDemo {
         while (m.find()){
             System.out.println(m.group());
         }
+*/
+
+        // ^ metacharacter
+        String text = "Hello World";
+        String pattern = "^hello";
+
+        Pattern p = Pattern.compile(pattern, Pattern.CASE_INSENSITIVE);
+        Matcher m = p.matcher(text);
+        boolean b = m.find();
+
+        System.out.println(b);
     }
 }
