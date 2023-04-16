@@ -80,9 +80,21 @@ public class MetacharactersDemo {
         }
 */
 
+/*
         // \s metacharacter
         Pattern pattern = Pattern.compile("\\s");
         Matcher matcher = pattern.matcher("Java is fun!");
+        boolean matchFound = matcher.find();
+        if(matchFound) {
+            System.out.println("Match found");
+        } else {
+            System.out.println("Match not found");
+        }
+*/
+
+        // \b metacharacter
+        Pattern pattern = Pattern.compile("\\bJava\\b");
+        Matcher matcher = pattern.matcher("I love Java!");
         boolean matchFound = matcher.find();
         if(matchFound) {
             System.out.println("Match found");
