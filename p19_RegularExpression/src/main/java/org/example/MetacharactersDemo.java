@@ -32,6 +32,7 @@ public class MetacharactersDemo {
         }
 */
 
+/*
         // ^ metacharacter
         String text = "Hello World";
         String pattern = "^hello";
@@ -41,5 +42,18 @@ public class MetacharactersDemo {
         boolean b = m.find();
 
         System.out.println(b);
+*/
+
+        // $ metacharacter
+        Pattern pattern = Pattern.compile("fun$", Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher("Java is fun");
+        boolean matchFound = matcher.find();
+        if(matchFound) {
+            System.out.println("Match found");
+        } else {
+            System.out.println("Match not found");
+        }
+
+
     }
 }
