@@ -7,9 +7,22 @@ public class CharacterClassesDemo {
 
     public static void main(String[] args) {
 
+/*
         // [abc]
         Pattern pattern = Pattern.compile("[abc]");
         Matcher matcher = pattern.matcher("Java is fun!");
+        boolean matchFound = matcher.find();
+        if(matchFound) {
+            System.out.println("Match found");
+        } else {
+            System.out.println("Match not found");
+        }
+*/
+
+        // [^abc]
+        Pattern pattern = Pattern.compile("[^abc]");
+//        Matcher matcher = pattern.matcher("Java is fun!");
+        Matcher matcher = pattern.matcher("abc");
         boolean matchFound = matcher.find();
         if(matchFound) {
             System.out.println("Match found");
