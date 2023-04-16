@@ -19,8 +19,20 @@ public class QuantifierDemo {
         }
 */
 
+/*
         // * quantifier
         Pattern pattern = Pattern.compile("a*");
+        Matcher matcher = pattern.matcher("Java is fun!");
+        boolean matchFound = matcher.find();
+        if(matchFound) {
+            System.out.println("Match found");
+        } else {
+            System.out.println("Match not found");
+        }
+*/
+
+        // ? quantifier
+        Pattern pattern = Pattern.compile("a?");
         Matcher matcher = pattern.matcher("Java is fun!");
         boolean matchFound = matcher.find();
         if(matchFound) {
