@@ -56,6 +56,7 @@ public class MetacharactersDemo {
         }
 */
 
+/*
         // \d metacharacter
         Pattern pattern = Pattern.compile("\\d");
         Matcher matcher = pattern.matcher("Java is fun 123");
@@ -65,8 +66,17 @@ public class MetacharactersDemo {
         } else {
             System.out.println("Match not found");
         }
+*/
 
         // \w metacharacter
+        Pattern pattern = Pattern.compile("\\w");
+        Matcher matcher = pattern.matcher("Java is fun!");
+        boolean matchFound = matcher.find();
+        if(matchFound) {
+            System.out.println("Match found");
+        } else {
+            System.out.println("Match not found");
+        }
 
 
 
