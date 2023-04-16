@@ -44,15 +44,30 @@ public class MetacharactersDemo {
         System.out.println(b);
 */
 
+/*
         // $ metacharacter
         Pattern pattern = Pattern.compile("fun$", Pattern.CASE_INSENSITIVE);
-        Matcher matcher = pattern.matcher("Java is fun");
+        Matcher matcher = pattern.matcher("Java is Fun");
         boolean matchFound = matcher.find();
         if(matchFound) {
             System.out.println("Match found");
         } else {
             System.out.println("Match not found");
         }
+*/
+
+        // \d metacharacter
+        Pattern pattern = Pattern.compile("\\d");
+        Matcher matcher = pattern.matcher("Java is fun 123");
+        boolean matchFound = matcher.find();
+        if(matchFound) {
+            System.out.println("Match found");
+        } else {
+            System.out.println("Match not found");
+        }
+
+        // \w metacharacter
+
 
 
     }
