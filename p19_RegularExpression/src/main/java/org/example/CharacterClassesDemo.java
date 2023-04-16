@@ -32,9 +32,22 @@ public class CharacterClassesDemo {
         }
 */
 
+/*
         // [a-z]
         Pattern pattern = Pattern.compile("[a-z]");
         Matcher matcher = pattern.matcher("Java is fun!");
+        boolean matchFound = matcher.find();
+        if(matchFound) {
+            System.out.println("Match found");
+        } else {
+            System.out.println("Match not found");
+        }
+*/
+
+        // union character classes
+        Pattern pattern = Pattern.compile("[a-d[m-p]]");
+//        Matcher matcher = pattern.matcher("Java is fun!");
+        Matcher matcher = pattern.matcher("efg");
         boolean matchFound = matcher.find();
         if(matchFound) {
             System.out.println("Match found");
