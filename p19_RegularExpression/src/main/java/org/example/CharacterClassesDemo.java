@@ -19,6 +19,7 @@ public class CharacterClassesDemo {
         }
 */
 
+/*
         // [^abc]
         Pattern pattern = Pattern.compile("[^abc]");
 //        Matcher matcher = pattern.matcher("Java is fun!");
@@ -29,5 +30,18 @@ public class CharacterClassesDemo {
         } else {
             System.out.println("Match not found");
         }
+*/
+
+        // [a-z]
+        Pattern pattern = Pattern.compile("[a-z]");
+        Matcher matcher = pattern.matcher("Java is fun!");
+        boolean matchFound = matcher.find();
+        if(matchFound) {
+            System.out.println("Match found");
+        } else {
+            System.out.println("Match not found");
+        }
+
+
     }
 }
