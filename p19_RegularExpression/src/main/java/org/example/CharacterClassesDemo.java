@@ -57,6 +57,7 @@ public class CharacterClassesDemo {
         }
 */
 
+/*
         // intersection character classes
         Pattern pattern = Pattern.compile("[a-z&&[def]]");
         Matcher matcher = pattern.matcher("Java is fun!");
@@ -65,6 +66,14 @@ public class CharacterClassesDemo {
             System.out.println("Match found");
         } else {
             System.out.println("Match not found");
+        }
+*/
+
+        // subtraction character classes
+        Pattern p = Pattern.compile("[0-9&&[345]]");
+        Matcher m = p.matcher("123456789");
+        while (m.find()) {
+            System.out.println(m.group());
         }
 
 
